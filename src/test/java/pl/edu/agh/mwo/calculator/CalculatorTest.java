@@ -33,10 +33,10 @@ public class CalculatorTest {
         Assert.assertEquals(6, calculator.divide(13 ,2));
     }
 
-//    @Test(expected = ArithmeticException)
-//    public void testDivideBuZero(){
-//
-//    }
+    @Test(expected = ArithmeticException.class)
+    public void testDivideBuZero(){
+        calculator.divide(5, 0);
+    }
 
     @Test
     public void testAvgFunction(){
